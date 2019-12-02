@@ -1,16 +1,14 @@
-FROM node:lts-alpine
+FROM ubuntu:latest
 
+RUN mkdir /app
 # make the 'app' folder the current working directory
 WORKDIR /app
 
-# copy both 'package.json' and 'package-lock.json' (if available)
-COPY package*.json ./
+VOLUME . /app
 
 # install project dependencies leaving out dev dependencies
-RUN npm install
-
-# copy project files and folders to the current working directory (i.e. 'app' folder)
-COPY . .
+#RUN npm install
 
 EXPOSE 8080
-CMD [ "npm", "run", "serve" ]
+
+CMD [ "ls", "-R" ]

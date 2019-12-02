@@ -1,4 +1,4 @@
-# Vuejs Learn Session 1
+# Vuejs Learn
 
 ## Install docker On Windows
 
