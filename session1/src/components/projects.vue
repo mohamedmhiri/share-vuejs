@@ -1,6 +1,6 @@
 <template lang="html">
   <div>
-    <div id="cont">bottone</div>
+    <div id="cont">botton</div>
 
       <div id="cont2">
         <div>
